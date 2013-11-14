@@ -1,0 +1,50 @@
+<%= form_for(@meal, :html => { :class => "form-horizontal" }) do |f| %>
+  <% if @meal.errors.any? %>
+    <div class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h4><%= pluralize(@meal.errors.count, "error") %> prohibited this meal from being saved:</h4>
+
+      <ul>
+      <% @meal.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name, :class => "col-lg-2 control-label" %>
+    <div class="col-lg-10">
+      <%= f.text_field :name, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :price, :class => "col-lg-2 control-label" %>
+    <div class="col-lg-10">
+      <%= f.text_field :price, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :mealtime, :class => "col-lg-2 control-label" %>
+    <div class="col-lg-10">
+      <%= f.number_field :mealtime, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :enrolled_no_of_students, :class => "col-lg-2 control-label" %>
+    <div class="col-lg-10">
+      <%= f.number_field :enrolled_no_of_students, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :time, :class => "col-lg-2 control-label" %>
+    <div class="col-lg-10">
+      <%= f.date_select :time, :class => "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit :class => "btn btn-primary" %>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,42 @@
+<div class="page-header">
+  <%= link_to choices_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_choice_path(@choice), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show choice</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Student:</dt>
+  <dd><%= @choice.student_id %></dd>
+
+  <dt>Ch array:</dt>
+  <dd><%= @choice.ch_array %></dd>
+
+  <dt>Time:</dt>
+  <dd><%= @choice.time %></dd>
+
+  <dt>Total:</dt>
+  <dd><%= @choice.total %></dd>
+
+</dl>
+
+
+<table class="table">
+<th><td>Name</td></th>
+<tbody>
+
+<% @ch_array.each do |ch| %>
+
+<tr><td><%= ch.name %></td></tr>
+
+<% end %>
+
+
+</tbody>
+
+</table>

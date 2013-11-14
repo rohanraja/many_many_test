@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  student_id: 1
+  ch_array: MyString
+  time: 2013-11-14
+  total: 1.5
+
+two:
+  student_id: 1
+  ch_array: MyString
+  time: 2013-11-14
+  total: 1.5

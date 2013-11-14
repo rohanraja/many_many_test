@@ -1,4 +1,12 @@
 ManyManyTest::Application.routes.draw do
+  resources :meals
+
+  resources :choices
+
+  resources :students
+
+  resources :users
+
   root :to => 'posts#index'
   resources :posts
 

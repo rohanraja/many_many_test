@@ -1,0 +1,32 @@
+<div class="page-header">
+  <%= link_to students_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_student_path(@student), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show student</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Rollno:</dt>
+  <dd><%= @student.rollno %></dd>
+
+  <dt>Name:</dt>
+  <dd><%= @student.name %></dd>
+
+  <dt>Email:</dt>
+  <dd><%= @student.email %></dd>
+
+  <dt>Phoneno:</dt>
+  <dd><%= @student.phoneno %></dd>
+
+  <dt>Department:</dt>
+  <dd><%= @student.department %></dd>
+
+  <dt>Year:</dt>
+  <dd><%= @student.year %></dd>
+
+</dl>
