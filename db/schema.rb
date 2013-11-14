@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131114041629) do
+ActiveRecord::Schema.define(version: 20131114061811) do
 
   create_table "choices", force: true do |t|
     t.integer  "student_id"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20131114041629) do
     t.string   "name"
     t.float    "price"
     t.integer  "mealtime"
+    t.integer  "mealday"
+    t.integer  "mealindex"
     t.integer  "enrolled_no_of_students"
     t.date     "time"
     t.datetime "created_at"

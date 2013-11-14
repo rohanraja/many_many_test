@@ -18,7 +18,7 @@ class MealsControllerTest < ActionController::TestCase
 
   test "should create meal" do
     assert_difference('Meal.count') do
-      post :create, meal: { enrolled_no_of_students: @meal.enrolled_no_of_students, mealtime: @meal.mealtime, name: @meal.name, price: @meal.price, time: @meal.time }
+      post :create, meal: { enrolled_no_of_students: @meal.enrolled_no_of_students, mealday: @meal.mealday, mealindex: @meal.mealindex, mealtime: @meal.mealtime, name: @meal.name, price: @meal.price, time: @meal.time }
     end
 
     assert_redirected_to meal_path(assigns(:meal))
@@ -35,7 +35,7 @@ class MealsControllerTest < ActionController::TestCase
   end
 
   test "should update meal" do
-    patch :update, id: @meal, meal: { enrolled_no_of_students: @meal.enrolled_no_of_students, mealtime: @meal.mealtime, name: @meal.name, price: @meal.price, time: @meal.time }
+    patch :update, id: @meal, meal: { enrolled_no_of_students: @meal.enrolled_no_of_students, mealday: @meal.mealday, mealindex: @meal.mealindex, mealtime: @meal.mealtime, name: @meal.name, price: @meal.price, time: @meal.time }
     assert_redirected_to meal_path(assigns(:meal))
   end
 

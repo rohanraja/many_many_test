@@ -4,6 +4,8 @@ one:
   name: MyString
   price: 1.5
   mealtime: 1
+  mealday: 1
+  mealindex: 1
   enrolled_no_of_students: 1
   time: 2013-11-14
 
@@ -11,5 +13,7 @@ two:
   name: MyString
   price: 1.5
   mealtime: 1
+  mealday: 1
+  mealindex: 1
   enrolled_no_of_students: 1
   time: 2013-11-14

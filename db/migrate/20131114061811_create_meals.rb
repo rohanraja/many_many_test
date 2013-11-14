@@ -4,6 +4,8 @@ class CreateMeals < ActiveRecord::Migration
       t.string :name
       t.float :price
       t.integer :mealtime
+      t.integer :mealday
+      t.integer :mealindex
       t.integer :enrolled_no_of_students
       t.date :time
 

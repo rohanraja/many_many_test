@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
+    UserMailer.welcome_email().deliver
   end
 
   # GET /users/new
