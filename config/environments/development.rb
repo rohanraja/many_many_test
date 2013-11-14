@@ -32,7 +32,7 @@ ManyManyTest::Application.configure do
   address:              'iitkgpmail.iitkgp.ac.in',
   port:                 25,
   user_name:            'rohanraja9',
-  password:             '9.9.1993',
+  password:             '',
   enable_starttls_auto: false
   
    }
